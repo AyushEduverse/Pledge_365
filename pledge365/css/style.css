@@ -1,0 +1,13 @@
+/* css/style.css */
+
+/*
+ 📄 Master Stylesheet – Imports all feature-specific styles
+ Location: css/style.css
+ Used in: index.html, login.html, signup.html, dashboard.html, etc.
+*/
+
+@import url('splash.css');      /* Splash screen styles */
+@import url('login.css');       /* Login page styles */
+@import url('signup.css');      /* Signup page styles */
+@import url('dashboard.css');   /* Dashboard (My Trees) styles */
+/* @import url('community.css');   (Future) Community Trees styles */

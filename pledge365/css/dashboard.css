@@ -1,0 +1,187 @@
+/* pledge365-app/css/dashboard.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #197278;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar button {
+  background-color: #f8b500;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard {
+  padding: 1.5rem;
+}
+
+.welcome h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.summary {
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 200px;
+}
+
+.stat-card h4 {
+  margin-bottom: 0.5rem;
+  color: #197278;
+}
+
+.actions {
+  margin-top: 2rem;
+}
+
+.actions button {
+  background-color: #197278;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actions button:hover {
+  background-color: #145c63;
+}
+
+/* 🌿 Tree Section Styles */
+.tree-section {
+  margin-top: 2.5rem;
+}
+
+.tree-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tree-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.tree-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.tree-card:hover {
+  transform: translateY(-5px);
+}
+
+.tree-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tree-info {
+  margin-top: 0.8rem;
+}
+
+.tree-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #197278;
+}
+
+.tree-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.tree-status {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* 👤 User Info Section */
+.user-info {
+  margin-top: 2rem;
+}
+
+.user-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.user-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  max-width: 300px;
+  font-size: 0.95rem;
+}
+
+.user-card p {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.user-card strong {
+  color: #197278;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+  .actions button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .stat-card {
+    width: 100%;
+  }
+
+  .tree-grid {
+    grid-template-columns: 1fr;
+  }
+}

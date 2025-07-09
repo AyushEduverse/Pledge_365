@@ -1,0 +1,74 @@
+/* css/login.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0fdf4;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .login-title {
+    color: #065f46;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+  }
+  
+  #loginForm input {
+    width: 93%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  #loginForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #loginForm button:hover {
+    background-color: #059669;
+  }
+  
+  .redirect-msg {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #374151;
+  }
+  
+  .redirect-msg a {
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  

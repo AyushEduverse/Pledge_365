@@ -1,0 +1,54 @@
+<!-- pledge365-app/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pledge 365 Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🌱 Pledge 365</div>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome">
+      <h2>Welcome, <span id="username">User</span> 👋</h2>
+      <p>Track your green journey here.</p>
+    </section>
+
+    <section class="user-info">
+      <h3>Your Profile</h3>
+      <div class="user-card">
+        <p><strong>Name:</strong> <span id="userName">-</span></p>
+        <p><strong>Email:</strong> <span id="userEmail">-</span></p>
+        <p><strong>Joined:</strong> <span id="userJoinDate">-</span></p>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h3>Your Green Stats</h3>
+      <div class="stat-card">
+        <h4>Trees Adopted</h4>
+        <p id="treeCount">0</p>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button onclick="location.href='adopt.html'">+ Adopt New Tree</button>
+      <button onclick="location.href='community.html'">🌍 Community Trees</button>
+    </section>
+
+    <section class="tree-section">
+      <h3>Your Adopted Trees</h3>
+      <div class="tree-grid" id="treeContainer">
+        <!-- Tree cards will be injected by JS -->
+      </div>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
